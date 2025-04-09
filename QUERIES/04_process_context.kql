@@ -1,4 +1,4 @@
-let VMName = "windows-target-1";
+let VMName = "julius-mde-test";
 let specificTime = datetime(2024-10-18T04:09:37.5180794Z);
 DeviceProcessEvents
 | where Timestamp between ((specificTime - 10m) .. (specificTime + 10m))
