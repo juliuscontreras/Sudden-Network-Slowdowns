@@ -6,7 +6,7 @@
 
 ## Network Indicators
 - Host: `julius-mde-test`
-- IP: `10.0.0.5`
+- IP: `10.0.1.115`
 - Unusual pattern of failed connection attempts to multiple hosts.
 
 ## Suspicious Activity
