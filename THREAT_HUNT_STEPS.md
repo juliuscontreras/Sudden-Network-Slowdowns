@@ -13,7 +13,7 @@
 
 ## 3. Data Analysis
 - Counted failed connections from devices.
-- Observed excessive outbound failed connection attempts from `10.0.0.5`.
+- Observed excessive outbound failed connection attempts from `10.0.1.115`.
 
 ## 4. Investigation
 - Used KQL to pivot into DeviceProcessEvents.
