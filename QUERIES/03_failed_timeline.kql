@@ -1,4 +1,4 @@
-let IPInQuestion = "10.0.0.5";
+let IPInQuestion = "10.0.1.115";
 DeviceNetworkEvents
 | where ActionType == "ConnectionFailed"
 | where LocalIP == IPInQuestion
