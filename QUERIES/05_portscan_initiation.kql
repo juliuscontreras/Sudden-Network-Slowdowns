@@ -1,0 +1,8 @@
+let VMName = "julius-mde-test";
+let specificTime = datetime(2025-04-09T01:01:25.9045716Z);
+DeviceProcessEvents
+| where Timestamp between ((specificTime - 10m) .. (specificTime + 10m))
+| where DeviceName == VMName
+| where InitiatingProcessCommandLine contains "portscan"
+| order by Timestamp desc
+| project Timestamp, FileName, InitiatingProcessCommandLine, AccountName

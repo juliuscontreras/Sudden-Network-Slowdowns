@@ -1,0 +1,4 @@
+DeviceNetworkEvents
+| where ActionType == "ConnectionFailed"
+| summarize FailedConnectionsAttempts = count() by DeviceName, ActionType, LocalIP, RemoteIP
+| order by FailedConnectionsAttempts desc

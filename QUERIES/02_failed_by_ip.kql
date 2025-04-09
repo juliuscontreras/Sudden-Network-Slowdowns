@@ -1,0 +1,6 @@
+let IPInQuestion = "10.0.0.5";
+DeviceNetworkEvents
+| where ActionType == "ConnectionFailed"
+| where LocalIP == IPInQuestion
+| summarize FailedConnectionsAttempts = count() by DeviceName, ActionType, LocalIP
+| order by FailedConnectionsAttempts desc

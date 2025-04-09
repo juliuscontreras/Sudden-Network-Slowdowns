@@ -1,0 +1,5 @@
+let IPInQuestion = "10.0.0.5";
+DeviceNetworkEvents
+| where ActionType == "ConnectionFailed"
+| where LocalIP == IPInQuestion
+| order by Timestamp desc
